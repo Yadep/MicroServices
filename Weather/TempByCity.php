@@ -19,6 +19,9 @@ $obj = new stdClass();
 //$obj->label="Temp by city";
 $obj->data = array(
  //   array('ville',$ville),
+    array(
+        "Ville", "ANGERS"
+    ),
     array('temperature',$temp),
     array('urlIcon',$urlCondition),
     //and so on...
