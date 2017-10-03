@@ -32,7 +32,7 @@ $obj->data = array(
     ),
     array('temperature',$temp),
     array('urlIcon',$urlCondition),
-    //and so on...
+
 );
 //On retourne le JSON encoder
 echo utf8_decode(json_encode($obj));

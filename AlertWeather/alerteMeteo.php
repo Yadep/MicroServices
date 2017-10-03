@@ -5,11 +5,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+//Chargement du fichier XML
 $Oldxml = simplexml_load_file("http://vigilance.meteofrance.com/data/NXFR49_LFPW_.xml?9326350.xml") or die("Error: Cannot create object");
 $pheno = array();
 $pheno1 = array();
 
+//Parcour de toutes les lignes du XML au quelle on récupere les valeurs pour les phénomene tempete et innondation
 foreach ($Oldxml->PHENOMENE as $phen) {
     if ($phen['departement'] == 49) {
         //phenomene 3 = Tempete
