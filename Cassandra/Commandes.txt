@@ -1,0 +1,14 @@
+docker pull cassandra
+docker run --name some-cassandra -d cassandra
+
+docker run -it --link some-cassandra:cassandra --rm cassandra cqlsh cassandra 
+
+
+CREATE KEYSPACE thieftAlert WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 1 };
+
+CREATE TABLE IF NOT EXISTS thieftAlert.vol (idvol text PRIMARY KEY, longitude text, latitude text, datevol text);
+
+
+//Pour récuperer l'ip du conteneur docker
+docker inspect --format='{{ .NetworkSettings.IPAddress }}' some-cassandra
+IP : 172.17.0.2 + :9042 ?
