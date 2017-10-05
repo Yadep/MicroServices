@@ -1,5 +1,4 @@
 Les 3 appli/API Meteo,Pollution,AlertMeteo fonctionne (retourne tous un JSON)
-Problème avec SWAGGER pour la documentation, il nous affiche une erreur lors de la déclaration des retours JSON.
 
 Pour l'application Vol : 
 trois version des pages, une en NoSQL avec cassandra qui depend d'une dll php_cassandra.dll pour fonctionner
@@ -7,6 +6,12 @@ et une avec memcached qui necéssite un serveur + la dll php_memcached.dll
 BDD :
 MySQL Créer et fonctionne en local
 NoSQL avec cassandra Créer et fonctionne en local
+MemCached en place sur GetTheft.php
+
+Le script cron de notification est ecrit il manque l'appel au Mailer et son appel dans ce script
+
+MANQUE : 
+MAILER (Script écrit mais a la main avec la fonction mail de php() uniquement a des fin de tests car manque de temps pour finir le mailer avec AMQP
 
 
 Project by Aldwin Yahiaoui & Matthieu Nauleau
