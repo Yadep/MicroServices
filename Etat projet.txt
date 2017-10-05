@@ -2,11 +2,11 @@ Les 3 appli/API Meteo,Pollution,AlertMeteo fonctionne (retourne tous un JSON)
 Problème avec SWAGGER pour la documentation, il nous affiche une erreur lors de la déclaration des retours JSON.
 
 Pour l'application Vol : 
-Deux version des pages, une en NoSQL qui ne fonctionne pas a cause d'un problème de driver mais le code semble bon.
-
+trois version des pages, une en NoSQL avec cassandra qui depend d'une dll php_cassandra.dll pour fonctionner
+et une avec memcached qui necéssite un serveur + la dll php_memcached.dll
 BDD :
 MySQL Créer et fonctionne en local
-NoSQL Créer et fonctionne en local mais problème de driver avec PHP pour communiquer avec l'appli
+NoSQL avec cassandra Créer et fonctionne en local
 
 
 Project by Aldwin Yahiaoui & Matthieu Nauleau
